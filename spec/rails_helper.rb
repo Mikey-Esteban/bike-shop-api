@@ -63,6 +63,8 @@ RSpec.configure do |config|
   # config.filter_gems_from_backtrace("gem name")
 
   config.include SneakerHelpers
+  config.include JSONAPI::RSpec
+  config.include ApiHelpers
 end
 
 Shoulda::Matchers.configure do |config|
